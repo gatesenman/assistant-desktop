@@ -2,6 +2,24 @@
 
 **0.8.0** · 能 7×24 操控整台电脑的多智能体桌面 AI 助理。支持任意 OpenAI 兼容接口，界面为简体中文，可切换浅色 / 深色。
 
+## 界面截图
+
+![浏览器设置](docs/screenshots/01-browser-settings.png)
+
+*浏览器设置 / Browser settings*
+
+![对话与轨迹回放](docs/screenshots/02-chat-ready.png)
+
+*对话与轨迹回放 / Chat and trajectory replay*
+
+![回放时间线](docs/screenshots/03-replay-timeline.png)
+
+*回放时间线 / Replay timeline*
+
+![示教开始](docs/screenshots/04-teach-start.png)
+
+*示教开始 / Teach-from-demo start*
+
 ## 功能特性
 
 - 持久化 Chromium Profile（保留登录态 / Cookie），可按助手分目录；也支持 CDP 连接已有浏览器。
@@ -46,6 +64,24 @@ npm run dist:win     # 如需自行打包 Windows 安装包
 # Assistant Desktop
 
 **0.8.0** · A multi-agent desktop AI assistant that can operate the computer around the clock. Works with any OpenAI-compatible API. UI is Simplified Chinese, with light/dark themes.
+
+## Screenshots
+
+![Browser settings](docs/screenshots/01-browser-settings.png)
+
+*浏览器设置 / Browser settings*
+
+![Chat and trajectory replay](docs/screenshots/02-chat-ready.png)
+
+*对话与轨迹回放 / Chat and trajectory replay*
+
+![Replay timeline](docs/screenshots/03-replay-timeline.png)
+
+*回放时间线 / Replay timeline*
+
+![Teach-from-demo start](docs/screenshots/04-teach-start.png)
+
+*示教开始 / Teach-from-demo start*
 
 ## Features
 
