@@ -1,0 +1,14 @@
+{
+  "id": "teach-skill-draft",
+  "name": "示教生成技能草稿",
+  "os": "any",
+  "init": [],
+  "instruction": "录制包含点击与输入的示教，停止后生成 SKILL.md 草稿",
+  "check": {
+    "type": "skill_draft_exists"
+  },
+  "max_steps": 5,
+  "tags": [
+    "teach"
+  ]
+}

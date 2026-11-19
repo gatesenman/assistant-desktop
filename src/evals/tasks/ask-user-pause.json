@@ -1,0 +1,16 @@
+{
+  "id": "ask-user-pause",
+  "name": "ask_user 暂停等待",
+  "os": "any",
+  "init": [],
+  "instruction": "调用 ask_user 询问用户最喜欢的颜色，再根据回答回复",
+  "check": {
+    "type": "tool_called",
+    "name": "ask_user"
+  },
+  "max_steps": 6,
+  "tags": [
+    "ask_user",
+    "takeover"
+  ]
+}

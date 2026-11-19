@@ -1,0 +1,14 @@
+html,body{margin:0;height:100%;background:#1f1f1f;color:#f2f2f2;font:13px/1 -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;overflow:hidden;user-select:none}
+.bar{display:flex;align-items:center;gap:10px;height:100%;padding:0 8px 0 14px;box-sizing:border-box;border:1px solid #3a3a3a;border-radius:10px;-webkit-app-region:drag}
+.live{color:#ff4d4f;font-size:16px;animation:p 1.2s infinite}
+@keyframes p{50%{opacity:.35}}
+.t{flex:1;white-space:nowrap}
+.k{color:#a0a0a0;margin-left:6px}
+button{-webkit-app-region:no-drag;display:inline-flex;align-items:center;gap:4px;background:#ff4d4f;color:#fff;border:0;border-radius:7px;padding:6px 12px;font:inherit;font-weight:600;cursor:pointer}
+button:hover{background:#ff6b6d}
+button i{font-size:15px}
+#takeover{background:#3b82f6}
+#takeover:hover{background:#60a5fa}
+#handback{background:#16a34a}
+#handback:hover{background:#22c55e}
+button[hidden]{display:none !important}

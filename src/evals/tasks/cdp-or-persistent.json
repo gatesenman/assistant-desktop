@@ -1,0 +1,15 @@
+{
+  "id": "cdp-or-persistent",
+  "name": "持久化 profile / CDP 配置",
+  "os": "any",
+  "init": [],
+  "instruction": "验证设置中可配置持久化 profile 与 CDP 地址",
+  "check": {
+    "type": "settings_fields"
+  },
+  "max_steps": 2,
+  "tags": [
+    "browser",
+    "settings"
+  ]
+}

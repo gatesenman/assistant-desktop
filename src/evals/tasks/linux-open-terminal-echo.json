@@ -1,0 +1,19 @@
+{
+  "id": "linux-open-terminal-echo",
+  "name": "终端 echo 验证",
+  "os": "linux",
+  "init": [
+    "echo ready > /tmp/eval-ready.txt"
+  ],
+  "instruction": "打开终端，执行 echo EVAL_OK > /tmp/eval-out.txt",
+  "check": {
+    "type": "file_contains",
+    "path": "/tmp/eval-out.txt",
+    "contains": "EVAL_OK"
+  },
+  "max_steps": 12,
+  "tags": [
+    "shell",
+    "linux"
+  ]
+}

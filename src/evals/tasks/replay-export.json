@@ -1,0 +1,14 @@
+{
+  "id": "replay-export",
+  "name": "轨迹导出",
+  "os": "any",
+  "init": [],
+  "instruction": "对已有电脑日志导出 GIF 或帧序列",
+  "check": {
+    "type": "replay_export_ok"
+  },
+  "max_steps": 3,
+  "tags": [
+    "replay"
+  ]
+}

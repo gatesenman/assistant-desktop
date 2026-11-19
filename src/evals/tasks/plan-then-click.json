@@ -1,0 +1,15 @@
+{
+  "id": "plan-then-click",
+  "name": "先规划再点击",
+  "os": "linux",
+  "init": [],
+  "instruction": "电脑操控：先给出计划，确认后点击屏幕中央并截图核对",
+  "check": {
+    "type": "plan_confirmed"
+  },
+  "max_steps": 8,
+  "tags": [
+    "plan",
+    "reflect"
+  ]
+}

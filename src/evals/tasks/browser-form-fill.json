@@ -1,0 +1,16 @@
+{
+  "id": "browser-form-fill",
+  "name": "浏览器填表",
+  "os": "any",
+  "init": [],
+  "instruction": "打开测试页，用 browser_state 找到姓名框与提交按钮，填入「评测」并提交",
+  "check": {
+    "type": "text_contains",
+    "contains": "你好，评测"
+  },
+  "max_steps": 10,
+  "tags": [
+    "browser",
+    "dom-index"
+  ]
+}

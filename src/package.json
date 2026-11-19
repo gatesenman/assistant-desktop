@@ -1,0 +1,133 @@
+{
+  "name": "assistant-desktop",
+  "productName": "AssistantDesktop",
+  "version": "0.8.0",
+  "description": "多助手桌面 AI 助理 v0.8.0：持久化浏览器/CDP、接管交还与 ask_user、轨迹回放与示教技能、规划反思与经验记忆、自建评测集",
+  "main": "out/main/index.js",
+  "author": {
+    "name": "AssistantDesktop",
+    "email": "dev@example.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "npm run typecheck && electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "vitest run",
+    "smoke": "node scripts/smoke.mjs",
+    "dist": "npm run build && electron-builder",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "dist:linux": "npm run build && electron-builder --linux",
+    "e2e": "npm run build && bash e2e/run.sh",
+    "dist:win:dir": "npm run build && electron-builder --win --dir"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.6",
+    "node-cron": "^3.0.3",
+    "playwright-core": "^1.64.0",
+    "tesseract.js": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "playwright": "^1.64.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "rehype-highlight": "^7.0.0",
+    "remark-gfm": "^4.0.0",
+    "remixicon": "^4.9.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.2"
+  },
+  "build": {
+    "appId": "com.example.assistantdesktop",
+    "productName": "AssistantDesktop",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "out/**/*",
+      "package.json",
+      "connectors/**/*",
+      "skills/**/*",
+      "companion/**/*"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "${productName}-Setup-${version}.${ext}"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.productivity",
+      "icon": "build/icon.png"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility",
+      "maintainer": "AssistantDesktop <dev@example.com>",
+      "icon": "build/icon.png"
+    },
+    "asarUnpack": [
+      "node_modules/playwright-core/**",
+      "node_modules/@nut-tree-fork/**/*.node",
+      "node_modules/tesseract.js/**",
+      "node_modules/tesseract.js-core/**"
+    ],
+    "portable": {
+      "artifactName": "${productName}-Portable-${version}.${ext}"
+    },
+    "extraResources": [
+      {
+        "from": "resources/tessdata",
+        "to": "tessdata"
+      },
+      {
+        "from": "resources/local-vm",
+        "to": "local-vm"
+      }
+    ]
+  },
+  "homepage": "https://example.com/assistant-desktop",
+  "allowScripts": {
+    "esbuild@0.21.5": true,
+    "tesseract.js@5.1.1": true,
+    "electron@33.2.0": true
+  }
+}

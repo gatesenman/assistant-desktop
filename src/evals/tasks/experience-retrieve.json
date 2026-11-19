@@ -1,0 +1,15 @@
+{
+  "id": "experience-retrieve",
+  "name": "经验库检索",
+  "os": "any",
+  "init": [],
+  "instruction": "完成一次简单任务后，经验库应能按关键词检索到摘要",
+  "check": {
+    "type": "experience_hit",
+    "query": "截图"
+  },
+  "max_steps": 4,
+  "tags": [
+    "experience"
+  ]
+}
