@@ -36,26 +36,24 @@
 
 ## 从源码运行
 
-源码在 `src/`。本仓库不包含安装包。
+源码在仓库根目录。本仓库不包含安装包。
 
 ```bash
-cd src
 npm install
 npm run dev          # 开发
 npm test             # Vitest
 npm run build
 npm run dist:win     # 如需自行打包 Windows 安装包
 ```
-
 首次使用需在向导中配置并测试一个 OpenAI 兼容模型。API Key 只保存在本机用户数据目录。更细的功能说明见源码树中的 README。
 
 ## 文档
 
-- [详细说明（源码 README）](src/README.md)
+- [详细说明（源码 README）](README.original.md)
 
 ## 许可证
 
-`src/package.json` 声明为 MIT。仓库根目录未附带 LICENSE 文件。
+`package.json` 声明为 MIT。仓库根目录未附带 LICENSE 文件。
 
 ---
 
@@ -99,24 +97,22 @@ npm run dist:win     # 如需自行打包 Windows 安装包
 
 ## Getting started
 
-Source is under `src/`. This repository does not include installers.
+Source is at the repository root. This repository does not include installers.
 
 ```bash
-cd src
 npm install
 npm run dev          # development
 npm test             # Vitest
 npm run build
 npm run dist:win     # optional Windows package
 ```
-
 On first launch, complete the wizard by connecting and testing an OpenAI-compatible model. API keys stay in the local user data directory. See the in-tree README for a full feature list.
 
 ## Documentation
 
-- [详细说明（源码 README）](src/README.md)
+- [详细说明（源码 README）](README.original.md)
 
 ## License
 
-`src/package.json` declares MIT. There is no LICENSE file at the repository root.
+`package.json` declares MIT. There is no LICENSE file at the repository root.
 

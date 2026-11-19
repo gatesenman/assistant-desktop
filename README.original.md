@@ -38,7 +38,6 @@
 - UIA 示教目标捕获、真实 ffmpeg 导出 MP4、Plan 卡片与 ask_user 在真实 LLM 下的体验。
 - NSIS / Portable 安装包在本机构建（Linux box + wine）；签名与杀软误报需在 Windows 上确认。
 
-
 ## 0.4.0 新增
 
 - **连接器**：内置邮箱（IMAP/SMTP、Gmail OAuth）、Google/Microsoft 日历、Slack、Telegram MCP 连接器包；设置页安装/测试/状态；密钥 safeStorage。
@@ -121,7 +120,6 @@ cd assistant-desktop
 npm install          # 国内可设置 ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/
 npm run dev          # 开发模式（热更新）
 ```
-
 首次打开后点击左下角「⚙ 全局设置」，选择预设或填写 Base URL / API Key / 模型，保存并「测试连接」。
 电脑控制需要支持视觉 + 工具调用的模型（如 GPT-4o、Grok 4 等）。
 
@@ -144,7 +142,6 @@ npm test            # 单元测试（vitest，含错误分类、JSON 修复、�
 npm run smoke       # 冒烟测试（需先 build）
 npm run e2e         # 完整端到端测试（Linux：xvfb + dbus + gnome-keyring，见 e2e/run.sh）
 ```
-
 端到端测试使用 Playwright 驱动**真实应用**和一个可编排的假 OpenAI 服务器（`e2e/fake-openai.mjs`），共 24 个场景：
 流式对话、命令审批 / 拒绝、工具卡片、后台子任务、浏览器自动化、MCP、引导页与快速切换、搜索、托盘定时任务、
 **真实电脑控制**（在虚拟显示器上启动 Chromium 测试页，真实地点击输入框、输入「Hello 电脑」、点击提交并截图确认）、
@@ -158,7 +155,6 @@ Ctrl+Alt+Esc 急停（xdotool 发送真实按键）、悬浮条停止按钮、�
 E2E_SCRIPT=run-hardening.mjs bash e2e/run.sh   # 产品化：首次向导、错误与重试、畸形工具调用、上下文超长、OCR 模式、真实转发代理、检查更新、导出日志
 MODEL_API_KEY=sk-... E2E_SCRIPT=run-real.mjs bash e2e/run.sh   # 真实模型（DeepSeek）：对话、命令审批、读写文件、网页抓取、记忆、子任务、3 智能体并行委派、定时任务、纯文本模型 OCR 电脑控制
 ```
-
 ## 打包发布
 
 ```bash
@@ -166,7 +162,6 @@ npm run dist:win     # Windows：NSIS 安装包 + 便携版 exe（Linux 上需�
 npm run dist:mac     # macOS：dmg + zip（需在 macOS 上构建）
 npm run dist:linux   # Linux：AppImage + deb
 ```
-
 `@nut-tree-fork/nut-js` 已包含 Windows / macOS / Linux 的预编译原生模块，打包时自动解包到 `app.asar.unpacked`。
 正式分发建议进行代码签名（Windows 未签名的 exe 会触发 SmartScreen 提示）。
 
@@ -192,7 +187,6 @@ tests/                  vitest 单元测试
 e2e/                    Playwright 端到端测试 + 假模型服务器
 scripts/                冒烟测试、MCP 测试服务器
 ```
-
 ## 安全提示
 
 - 电脑控制、`run_shell`、`write_file` 能完全操作你的电脑。信任模式和无人值守定时任务会跳过审批，请只用于你信任的任务，并记住 **Ctrl+Alt+Esc** 急停。
