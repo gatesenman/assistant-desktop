@@ -49,7 +49,10 @@ npm run dist:win     # 如需自行打包 Windows 安装包
 
 ## 文档
 
-- [详细说明（源码 README）](README.original.md)
+
+## 贡献
+
+欢迎通过 Issue 和 Pull Request 参与，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。安全问题请按 [SECURITY.md](SECURITY.md) 私下报告。参与时请遵守 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)。
 
 ## 许可证
 
@@ -110,9 +113,11 @@ On first launch, complete the wizard by connecting and testing an OpenAI-compati
 
 ## Documentation
 
-- [详细说明（源码 README）](README.original.md)
+
+## Contributing
+
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). Please report vulnerabilities privately via [SECURITY.md](SECURITY.md). This project follows [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## License
 
 `package.json` declares MIT. There is no LICENSE file at the repository root.
-

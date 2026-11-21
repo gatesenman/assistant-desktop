@@ -1,5 +1,0 @@
-d93398bf21bc8cb219e4b9e488f6d9077f901d0c602f0badc142655f8637acb4  AssistantDesktop-Setup-0.8.0.exe
-97c16463a5e4130c3d0743952a8e5980c4b798b86b85f0ee2a0dcdf5b6a4b424  AssistantDesktop-Portable-0.8.0.exe
-233d10f586ee9a73fcf4e8f3261c5a58208519e91da84d20a4b14da152df07a4  AssistantDesktop-0.8.0-src.zip
-bfecd340052d0ace91c0e6b0c376d3dd1de39b945eabe9c2bbab2cb0bedfaa65  AssistantDesktop-0.8.0-e2e-screenshots.zip
-4d15041b7bd4b702d769b8c30edcfc87c2c63e35256f5e1257220a6dd7f17166  README.md
